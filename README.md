@@ -14,5 +14,22 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0075-sort-colors](https://github.com/palshupriyan-code/DSA/tree/main/0075-sort-colors/) | Medium |
 | [0242-valid-anagram](https://github.com/palshupriyan-code/DSA/tree/main/0242-valid-anagram/) | Easy |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/palshupriyan-code/DSA/tree/main/0075-sort-colors/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/palshupriyan-code/DSA/tree/main/0075-sort-colors/) | Medium |
+## Quicksort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/palshupriyan-code/DSA/tree/main/0075-sort-colors/) | Medium |
+## Bubble Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0075-sort-colors](https://github.com/palshupriyan-code/DSA/tree/main/0075-sort-colors/) | Medium |
 <!---LeetCode Topics End-->
