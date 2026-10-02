@@ -11,4 +11,3 @@ class Solution(object):
                 toRem -= 1
 
         l1.sort()
-        print(l1)
