@@ -1,13 +1,11 @@
 class Solution(object):
-    def merge(self, l1, m, l2, n):
-
-        l1.extend(l2)
-
-        if len(l1) > m+n :
-            toRem = len(l1) - (m+ n )
-            while toRem > 0 : 
-
-                l1.remove(0 )
-                toRem -= 1
-
-        l1.sort()
+    def merge(self, nums1, m, nums2, n):
+        i, j, k = m - 1, n - 1, m + n - 1
+        while j >= 0:
+            if i >= 0 and nums1[i] > nums2[j]:
+                nums1[k] = nums1[i]
+                i -= 1
+            else:
+                nums1[k] = nums2[j]
+                j -= 1
+            k -= 1
