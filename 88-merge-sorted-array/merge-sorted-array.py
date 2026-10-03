@@ -1,6 +1,5 @@
 class Solution(object):
     def merge(self, l1, m, l2, n):
-
         l1.extend(l2)
 
         if len(l1) > m+n :
