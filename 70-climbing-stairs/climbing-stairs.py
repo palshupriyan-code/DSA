@@ -1,16 +1,16 @@
 class Solution(object):
     def climbStairs(self, n):
         if n <= 2:
-            ways = n
+            return n
 
-        prev = 0
-        prev1 = 1
-        current = 0 
+        prev = 1
+        prev1 = 2
+        ways = 0 
 
-        for i in range (n) :
+        for i in range (3,n+1) :
 
-            current = prev + prev1
+            ways = prev + prev1
             prev = prev1
-            prev1 = current 
+            prev1 = ways 
 
-        return current
+        return ways
