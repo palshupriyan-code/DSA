@@ -4,14 +4,14 @@ public:
         if (n<= 2) {
             return n ;
         }
-        int prev = 0 ; int prev1 = 1; int current = 0 ; 
+        int prev = 0 ; int prev1 = 1; int ways = 0 ; 
 
         for (int i =0 ; i< n ; i ++ ){
-            current = prev + prev1 ;
+            ways = prev + prev1 ;
             prev = prev1 ;
-            prev1 = current ;
+            prev1 = ways ;
         }
 
-        return current ;
+        return ways ;
     }
 };
