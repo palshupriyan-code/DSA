@@ -4,9 +4,9 @@ public:
         if (n<= 2) {
             return n ;
         }
-        int prev = 0 ; int prev1 = 1; int ways = 0 ; 
+        int prev = 1 ; int prev1 = 2; int ways = 0 ; 
 
-        for (int i =0 ; i< n ; i ++ ){
+        for (int i = 3 ; i<= n ; i ++ ){
             ways = prev + prev1 ;
             prev = prev1 ;
             prev1 = ways ;
