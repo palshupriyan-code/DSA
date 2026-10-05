@@ -1,6 +1,4 @@
 # DSA
-https://github.com/raphaelheinz/LeetHub-3.0)
-
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Hash Table
