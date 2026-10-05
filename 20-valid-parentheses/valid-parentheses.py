@@ -12,8 +12,7 @@ class Solution(object):
 
             else :
                 if not stack :
-                    isValid = False
-                    break 
+                    return False
 
                 if s[i]=="}":
                     if stack.pop() =="{" :
