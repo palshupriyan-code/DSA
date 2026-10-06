@@ -12,7 +12,7 @@ public:
             prefix = 1 ; 
         }
 
-        else if (suffix == 0 ) {
+        if (suffix == 0 ) {
             suffix = 1;
         }
 
