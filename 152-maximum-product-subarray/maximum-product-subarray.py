@@ -10,7 +10,7 @@ class Solution(object):
             if prefix ==0 :
                 prefix = 1 
 
-            elif suffix == 0 :
+            if suffix == 0 :
                 suffix = 1 
 
             prefix = prefix * num [ i ]
