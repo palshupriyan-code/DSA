@@ -10,12 +10,10 @@ public:
             maxm = max(maxm,cnt) ;
         }
         else{cnt = 0 ; }
-    
         
     }
     
     return maxm;
 }
         
-
 };
