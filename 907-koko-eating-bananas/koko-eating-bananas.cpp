@@ -1,11 +1,11 @@
-int Maxm(vector <int> &piles){
-    int n = piles.size() ; 
-    int maxi = INT_MIN ; 
-    for (int i = 0 ; i <n ; i ++){
-        maxi = max(maxi , piles[ i ]) ; 
-    }
-    return maxi ; 
-}
+// int Maxm(vector <int> &piles){
+//     int n = piles.size() ; 
+//     int maxi = INT_MIN ; 
+//     for (int i = 0 ; i <n ; i ++){
+//         maxi = max(maxi , piles[ i ]) ; 
+//     }
+//     return maxi ; 
+// }
 
 long long cal_hours (vector <int> &piles , int mid ){
     long long tot_hours = 0 ; 
@@ -21,7 +21,7 @@ long long cal_hours (vector <int> &piles , int mid ){
 class Solution {
 public:
     int minEatingSpeed(vector<int>& piles, int h) {
-        int low = 1 ; int high = Maxm(piles) ; 
+        int low = 1 ; int high = *max_element(piles.begin(), piles.end()) ; 
         int n = piles.size() ; 
 
         while (low <= high ){
