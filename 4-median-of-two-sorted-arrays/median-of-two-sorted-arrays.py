@@ -1,5 +1,5 @@
-class Solution:
-    def findMedianSortedArrays(self, arr1: list[int], arr2: list[int]) -> float:
+class Solution(object):
+    def findMedianSortedArrays(self, arr1, arr2):
         i = 0 ; j = 0 
         arr3 = []
 
@@ -27,5 +27,9 @@ class Solution:
             return arr3[median]
         else:
             median = n//2
-            return (arr3[median] + arr3[median - 1])/2
+            return (arr3[median] + arr3[median - 1])/2.0
         
+ 
+
+
+
