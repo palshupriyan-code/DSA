@@ -19,8 +19,6 @@ int Dist(vector <int> &num , int mid ){
                 return cnt ; 
         }
     int splitArray(vector<int>& num, int k) {
-
-        int n = num.size() ; 
         int low = *max_element(num.begin(), num.end()) ;  int high = accumulate(num.begin(), num.end(),0) ; 
         while (low <= high){
             int mid = low + (high - low) /2 ; 
