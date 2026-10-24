@@ -12,14 +12,12 @@ class Solution(object):
                 arr3.append(arr2[j])
                 j+=1
 
-        if j == len(arr2) :
-            for k in range(i, len(arr1)):
-                arr3.append(arr1[k])
-
+        if j == len(arr2):
+            arr3.extend(arr1[i:])
+            
         else:
-            for k in range(j, len(arr2)):
-                arr3.append(arr2[k])
-        
+            arr3.extend(arr2[j:])
+                
         n = len(arr3)
         
         if n%2 == 1:
