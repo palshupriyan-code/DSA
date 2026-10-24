@@ -1,9 +1,9 @@
 class Solution {
 public:
 int Dist(vector <int> &num , int mid ){
-            int rsum = 0  ; int cnt = 1 ;
+            int rsum = num[0]  ; int cnt = 1 ;
 
-            for (int i = 0 ; i < num.size() ; i++){
+            for (int i = 1 ; i < num.size() ; i++){
 
                 if (rsum + num[i] <= mid){
 
