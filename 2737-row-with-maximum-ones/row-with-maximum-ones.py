@@ -1,15 +1,13 @@
 class Solution(object):
     def rowAndMaximumOnes(self, mat):
-        counts = {}
+        maxmsum = 0 
+        index = 0 
 
-        for i in range (len(mat)):
+        for i in range(len(mat)):
+            sum1 = sum(mat[i])
 
-            counts[i] = 0
-            for j in range(len(mat[0])):
+            if sum1 > maxmsum :
+                maxmsum = sum1
+                index = i 
 
-                if mat[i][j] == 1:
-                    counts[i] +=1
-
-        row = max(counts, key=counts.get)
-
-        return ([row, counts[row]]) 
+        return [index,maxmsum]
