@@ -1,5 +1,4 @@
-bool possible(vector <int> &bloomDay , int day , int m , int k ){
-    int n = bloomDay.size() ; 
+bool possible(vector <int> &bloomDay , int day , int m , int k ,int n ){
     int cnt = 0 ;
     int No_of_Bloom = 0 ; 
 
@@ -41,7 +40,7 @@ public:
         while (low <= high){
             int mid = low + (high - low ) / 2 ;
 
-            if (possible(bloomDay , mid , m , k)){
+            if (possible(bloomDay , mid , m , k,n)){
                 high = mid -1 ;
             }
 
