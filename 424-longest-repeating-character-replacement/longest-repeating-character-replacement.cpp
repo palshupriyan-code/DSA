@@ -4,15 +4,15 @@ public:
         int l = 0 ; int r = 0 ; int n = s.size();
         int maxlen = 0 ; 
         int maxfreq = 0 ;
-        vector<int> hash(26) ;
+        vector<int> freq(26) ;
 
         while (r< n) {
-            hash[s[r] - 'A'] ++ ;
-            maxfreq = max(maxfreq , hash[s[r]- 'A']) ;
+            freq[s[r] - 'A'] ++ ;
+            maxfreq = max(maxfreq , freq[s[r]- 'A']) ;
             int change = r-l+1 - maxfreq ; 
 
             if (change > k ){
-                hash[s[l] - 'A']--;
+                freq[s[l] - 'A']--;
                 l++ ; 
             }
             else{
