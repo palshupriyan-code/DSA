@@ -1,7 +1,6 @@
 class Solution {
 public:
     int numberOfSubstrings(string s) {
-        int l = 0 ; int r = 0 ; 
         int n = s.size() ; vector<int> lastseen = {-1,-1,-1} ; 
         int count = 0 ; 
 
