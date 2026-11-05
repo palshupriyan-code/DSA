@@ -13,23 +13,17 @@ class Solution(object):
                 if not stack :
                     return False 
 
-                if s[i]=="}":
-                    if stack.pop() =="{" :
-                        continue
-                    else:
-                        return False
+                if s[i]=="}" and stack.pop() =="{" :
+                    continue
 
-                elif s[i]==")":
-                    if stack.pop() =="(" :
-                        continue
+                elif s[i]==")" and stack.pop() =="(" :
+                    continue
 
-                    else:
-                        return False
+                elif s[i]=="]" and  stack.pop() =="[" :
+                    continue
+
                 else:
-                    if stack.pop() =="[" :
-                        continue
-                    else:
-                        return False
+                    return False
                     
         if isValid is True and len(stack) ==0  :
             return True
