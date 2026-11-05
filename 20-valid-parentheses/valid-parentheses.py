@@ -10,7 +10,8 @@ class Solution(object):
                 stack.append(s[i])
 
             else :
-                if not stack :
+
+                if len(stack) == 0:
                     return False 
 
                 if s[i]=="}" and stack.pop() =="{" :
@@ -25,7 +26,4 @@ class Solution(object):
                 else:
                     return False
                     
-        if isValid is True and len(stack) ==0  :
-            return True
-        else:
-            return False
+        return len(stack) == 0 
