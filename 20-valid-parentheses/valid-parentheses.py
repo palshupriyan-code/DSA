@@ -2,7 +2,9 @@ class Solution(object):
     def isValid(self, s):
         n= len(s)
         stack = []
-        isValid= True
+
+        if n % 2 == 1:      
+            return False
 
         for i in range (n) :
 
