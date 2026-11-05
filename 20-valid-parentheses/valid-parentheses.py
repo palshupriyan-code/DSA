@@ -17,23 +17,19 @@ class Solution(object):
                     if stack.pop() =="{" :
                         continue
                     else:
-                        isValid = False
-                        break
+                        return False
 
                 elif s[i]==")":
                     if stack.pop() =="(" :
                         continue
 
                     else:
-                        isValid = False
-                        break
-
+                        return False
                 else:
                     if stack.pop() =="[" :
                         continue
                     else:
-                        isValid = False
-                        break
+                        return False
                     
         if isValid is True and len(stack) ==0  :
             return True
