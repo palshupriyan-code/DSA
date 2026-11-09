@@ -3,14 +3,13 @@ class Solution(object):
 
         left , right = 0 ,len(height)-1
 
-        max_water = (min ( height [ left]  , height[right ]))*( right - left )
+        max_water = 0
 
         while left<right :
 
             new_water = (min(height[left], height[right]))*(right - left)
 
-            if new_water > max_water :
-                max_water = new_water
+            max_water = max(new_water , max_water)
 
             if height[left ] < height [right ] :
                     
