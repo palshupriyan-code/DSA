@@ -41,24 +41,20 @@ public:
     
      return maxarea ; 
     }
-    
-    int maximalRectangle(vector<vector<char>> &nums) {
-        if (nums.empty() || nums[0].empty()) return 0;
-        int n = nums.size(), m = nums[0].size();
-        vector<vector<int>> psum(n, vector<int>(m, 0));
 
-        for (int j = 0; j < m; j++) {
-            int sum = 0;
-            for (int i = 0; i < n; i++) {
-                if (nums[i][j] == '0') sum = 0;
-                else sum++;
-                psum[i][j] = sum;
-            }
-        }
-
+    int maximalRectangle(vector<vector<char>> &matrix) {
+        if (matrix.empty() || matrix[0].empty()) return 0;
+        int n = matrix.size(), m = matrix[0].size();
+        vector<int> heights(m, 0);
         int maxarea = 0;
-        for (int i = 0; i < n; i++)
-            maxarea = max(maxarea, largestRectangleArea(psum[i]));
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (matrix[i][j] == '1') heights[j]++;
+                else heights[j] = 0;
+            }
+            maxarea = max(maxarea, largestRectangleArea(heights));
+        }
         return maxarea;
     }
 };
