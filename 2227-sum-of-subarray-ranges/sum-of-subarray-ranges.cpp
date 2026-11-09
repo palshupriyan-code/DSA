@@ -56,7 +56,7 @@ public:
         vector<int> psee = PSEE(nums) ; vector<int> pgee = PGEE(nums) ; 
         vector<int> nse =  NSE(nums) ;  vector<int> nge = NGE(nums) ; 
 
-        long long min_tot = 0 ; long long max_tot = 0 ; long long tot = 0 ;
+        long long min_tot = 0 ; long long max_tot = 0 ;
 
         int n = nums.size() ; 
 
@@ -67,10 +67,8 @@ public:
 
            long long max_left = i - pgee[i] ; long long max_right = nge[i] - i ; 
            max_tot = max_tot + max_left * max_right * nums[i] ; 
-
-           tot = max_tot - min_tot ; 
         }
 
-        return tot ;  
+        return max_tot - min_tot ;  
     }
 };
