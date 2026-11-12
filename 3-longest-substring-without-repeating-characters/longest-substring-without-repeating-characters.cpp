@@ -10,7 +10,7 @@ public:
        while(r<n){
         cnt[(unsigned char)s[r]]++ ; 
 
-        while(cnt[(unsigned char)s[r]] >= 2 ) {
+        while(cnt[(unsigned char)s[r]] > 1 ) {
             cnt[(unsigned char)s[l]]--;
             l++ ; 
         }
