@@ -3,8 +3,8 @@ public:
      
      int sumdiv(vector<int> & nums ,int mid , int n ){
         int sum = 0 ; 
-        for (int i = 0 ; i< n ; i++){
-            sum += ceil((double)nums[i] / mid) ;  
+        for (int x : nums) {
+            sum += (x + mid - 1) / mid;   
         }
         return sum ; 
      }
