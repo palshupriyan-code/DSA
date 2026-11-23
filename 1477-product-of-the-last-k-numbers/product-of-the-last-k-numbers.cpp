@@ -18,6 +18,6 @@ public:
     int getProduct(int k) {
         int n = prefix.size();
         if (k >= n) return 0;
-        return prefix.back() / prefix[n - 1 - k];
+        return prefix.back() / prefix[n - k - 1];
     }
 };
